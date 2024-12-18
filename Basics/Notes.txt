@@ -1,0 +1,6 @@
+cout<<endl; is equivalent to cout << '\n' <<flush; so endl will flash buffer each time its called hence bit slower than \n.
+Anything to be output is first queued into an output buffer and written to the device (hard disk, monitor etc…) when the queue is full.So we can use endl when we want to avoid buffering as it flushes it instantly.
+
+bits/stdc++.h is a non-standard header file in C++ that includes almost all standard C++ libraries including STL libraries. Use for CP to code faster.
+cons: its non-standard so may not work on all compilers, increases compilation time+memory usage as it has lot of unused headers. so its not used in large projects.
+
